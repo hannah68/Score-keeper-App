@@ -1,0 +1,124 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css";
+
+.card{
+    background-color: #8c66ff;
+}
+
+.game-setup{
+    background-color: #8c66ff;
+    
+}
+
+.title{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0 !important;
+}
+
+.card-content{
+    padding: 10px 10px 80px;
+}
+
+.subtitle{ 
+    height: 5rem;
+    color: #fff;
+}
+
+.start{
+    background-color: #66ffb3;
+    outline: none;
+    border: none;
+}
+
+.start-footer{
+    background-color: #66ffb3;
+}
+
+.Scorecontainer{
+    display: none;
+}
+
+#card-content{
+    background-color: #e6f2ff;
+}
+
+.card-header{
+    background-color: #66b3ff;
+}
+
+.player1,
+.player2{
+    background-color: #cab5ff;
+    cursor: pointer;
+}
+
+.reset,
+.back{
+    background-color: #a1c3e6;
+    cursor: pointer;
+}
+
+.reset i,
+.back i{
+    color: #117eeb;
+}
+
+.add1,
+.add2{
+    background-color: #3173b6;
+    margin-left: -1rem;
+    color: #fff;
+}
+
+.playerinput-container2{
+    margin-left: 13rem;
+    display: block;
+}
+
+.playerinput-container1{
+    display: block;
+}
+
+.text1,
+.text2{
+    width: 10rem;
+}
+
+.table{
+    display: none;
+    background-color: #e1d7fa;
+}
+
+.reset:visited,
+.reset:link{
+    border: none;
+}
+
+/* js class */
+.Scorecontainer.show{
+    display: block;
+}
+
+.Scorecontainer.hide{
+    display: none;
+}
+
+.table.show{
+    display: table;
+}
+
+.pinkCard.hide{
+    display: none;
+}
+
+.pinkCard.show{
+    display: block;
+}
+
+.winner{
+    color: green;
+}
+
+.loser{
+    color: red;
+}
+

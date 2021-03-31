@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Score keeper App</title>
+</head>
+<body>
+
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-4 is-half is-offset-4 pinkCard">
+                <!-- game set up -->
+                <div class="card game-setup">
+                    <p class="title has-text-centered pb-3 pt-3">
+                        Score Keeper
+                    </p>
+                    <div class="card-content">
+                        <div class="subtitle has-text-left p-3">
+                            <div class="typeOfGame">
+                                <p class="mb-4">Game Setup:</p>
+                                <label for="gameType">game:</label>
+                                <div class="select is-rounded is-inline-block is-small">
+                                    <select name="games" id="gameType">
+                                        <option value ="choose" selected="selected">Choose your game</option>
+                                        <option value="tennis">Tennis</option>
+                                        <option value="badminton">Badminton</option>
+                                        <option value="ping pong">Ping pong</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="numOfPlayer mt-3">
+                                <label for="playerNum">player:</label>
+                                <div class="select is-rounded is-inline-block is-small">
+                                    <select name="num" id="playerNum">
+                                        <option value="2">2</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer start-footer">
+                        <p class="card-footer-item">
+                            <button class="button start card-footer-item">Start Game</button>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+
+            <!-- score keeper -->
+            <div class="column is-half is-offset-one-quarter Scorecontainer">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                          <img src="https://bulma.io/images/placeholders/640x320.png" class ="img" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <div class="card-header-title is-flex">
+                            <div class="playerinput-container1">
+                                <div class="player1input pr-2 mb-2 has-text-centered">Player1</div>
+                                <input type="text" class="text1 input is-small" placeholder="Enter your name">
+                                <button class="add1 button is-small">Add</button>
+                                <ul class="container1 mt-2"></ul>
+                            </div>
+
+                            <div class="playerinput-container2">
+                                <div class="player2input pr-2 mb-2 has-text-centered">Player2</div>
+                                <input type="text" class="text2 input is-small" placeholder="Enter your name">
+                                <button class="add2 button is-small">Add</button>
+                                <ul class="container2 mt-2"></ul>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="card-content" id="card-content">
+                        <div class="content">
+                            <h1 class="has-text-centered">
+                                <span class="score1">0</span> - <span class="score2">0</span>
+                            </h1>
+                            
+                            <label for="play">Playing to:</label>
+                            <div class="select is-rounded is-inline-block is-small">
+                                <select name="plays" id="play"> 
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+
+                            <p class="mt-2">Use the buttons below to keep score:</p>
+                        </div>
+                    </div>
+
+                    <footer class="card-footer">
+                        <button class="player1 card-footer-item">Player One</button>
+                        <button class="player2 card-footer-item">Player Two</button>
+                    </footer>
+
+                    <footer class="card-footer">
+                        <button class="reset card-footer-item" id="btn"><i class="fas fa-undo-alt mr-2"></i>Reset</button>
+                    </footer>
+
+                    <footer class="card-footer">
+                        <button class="back card-footer-item" id="btn"><i class="fas fa-arrow-left mr-2"></i>Back</button>
+                    </footer>
+                </div>
+                <!-- Table of points -->
+                <div class="card mt-6">
+                    <table class="table is-fullwidth is-bordered has-text-centered">
+                        <thead class="has-text-weight-bold is-uppercase">
+                            <tr>
+                                <th>Round</th>
+                                <th>Winner</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="round">1</th>
+                                <th class="winnerList"></th>
+                                <th><span class="score1List">0</span> - <span class="score2List">0</span></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+    <script src="app.js"></script>
+</body>
+</html>
